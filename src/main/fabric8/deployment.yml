@@ -4,7 +4,7 @@ spec:
     spec:
       containers:
       - name: ipaas-console
-        image: fabric8/ipaas-hawtio:${project.version}
+        image: fabric8/ipaas-console:latest
         ports:
         - containerPort: 1337
           name: "http"
