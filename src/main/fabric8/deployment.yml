@@ -5,3 +5,18 @@ spec:
       containers:
       - name: ipaas-console
         image: fabric8/ipaas-hawtio:${project.version}
+        ports:
+        - containerPort: 1337
+          name: "http"
+        readinessProbe:
+          httpGet:
+            path: "/"
+            port: 1337
+          initialDelaySeconds: 10
+          timeoutSeconds: 5
+        livenessProbe:
+          httpGet:
+            path: "/"
+            port: 1337
+          initialDelaySeconds: 60
+          timeoutSeconds: 5
