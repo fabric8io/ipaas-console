@@ -19,7 +19,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>ipaas-console</name>
   <description>iPaaS Console</description>
-  <packaging>pom</packaging>
 
   <scm>
     <connection>scm:git:git@github.com:fabric8io/ipaas-console.git</connection>
